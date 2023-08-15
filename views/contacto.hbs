@@ -1,0 +1,83 @@
+<main class="pt-0 bg-gradient-gray-white">
+  <div class="container-fluid" id="contacto-hero-image">
+    <div class="row align-items-center contacto-hero">
+      <div class="col-lg-4 offset-lg-3">
+        <h5>Contactame HOY...<br>
+        Y agendá tu sesión!</h5>
+        <br><br><br><br><br><br><br><br>
+      </div>
+    </div>
+  </div>
+
+  <!--Creamos un Container porque colocaremos adentro 2 ARTICLES -->
+    <!--Ceamos un row con 3 columnas, 1 ocupará 12. Y 2 ocuparán 6 lugares del ancho.-->
+  <div class="container mb-4 pt-4">
+    <section class="row">
+      <!-- 1 columna que ocupará 12 lugares.-->
+      <article class="col-12 text-center">
+        <h5>Vías de comunicación:</h5>
+        <p><i class=" bi bi-whatsapp fs-3 "> 
+        </i> +54 9 3876 664175 - andrearios.masoterapeuta@gmail.com<br>O completá el formulario de abajo:</p>
+      </article>
+
+      <!-- 1 Col ocupará 6 lugares del lado derecho -->
+      <!-- INICIO FORMULARIO CONTACTO -->
+      <article class="col-12 col-lg-6 order-lg-1">
+        <form action="https://formsubmit.co/andrearios.masoterapeuta@gmail.com" method="POST">
+
+            <label class="form-label" for="name"></label>
+          <input
+            class="form-control" id="name" name="name"
+            placeholder="Nombre y Apellido" type="text" required/>
+
+          <label class="form-label" for="email"></label>
+          <input
+            class="form-control" id="email" name="email"
+            placeholder="email" type="email" required/>
+
+          <label class="form-label" for="tel"></label>
+          <input
+            class="form-control" id="tel" name="tel"
+            placeholder="Teléfono" type="text" required/>  
+
+          <label class="form-label" for="comments"></label>
+          <textarea
+            class="form-control" id="comments" name="comments"
+            placeholder="Mensaje" cols="30" rows="4" required
+          ></textarea><br>
+
+          <input
+            class="btn btn-primary btn-md rounded-5"
+            type="submit" name="Submit" value="ENVIAR" id="sumit"/>
+
+          <input
+            type="hidden" name="_next" value="http://localhost:3000/gracias"/>
+
+          <input type="hidden" name="_subject" value="Contact form!"/>
+
+        </form>
+      </article>
+      <!-- FIN FORMULARIO CONTACTO -->
+
+      <!--Esta columna ocupará 6 lugares -->
+      <article class="mt-4 col-12 col-lg-6">
+        
+        <!-- INICIO MAPA CONTACTO -->
+        <div class="ratio ratio-16x9">
+          <!--Insertamos un Mapa con aspecto 16:9 (horizontal).-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14369.156493932445!2d-64.972522!3d-25.794033999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941850e68a859281%3A0x72c3e751f34d2ce9!2sAndrea%20Rios%20Masoterapia%20%2B%20Est%C3%A9tica!5e0!3m2!1ses!2sar!4v1691976796177!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- FIN MAPA CONTACTO -->
+        <br><br>
+      </article>
+    </section>
+  </div>
+</main>
