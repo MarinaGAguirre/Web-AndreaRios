@@ -68,6 +68,18 @@ html {
  --bs-btn-font-size: 0.75rem;
 }
 
+.btn-bbglow {
+ background-color: var(--white-color);
+ border-color: var(--white-color);
+ --bs-btn-hover-bg: rgb(143, 0, 255);
+ --bs-btn-hover-border-color: rgb(143, 0, 255);
+ --bs-btn-hover-color: var(--white-color);
+ --bs-btn-color: var(--second-color);
+ --bs-btn-active-bg: var(--second-color);
+ --bs-btn-active-border-color: var(--second-color);
+ --bs-btn-font-size: 0.75rem;
+}
+
 .btn-check {
  background-color: var(--second-color);
  border-color: var(--bs-btn-active-border-color);
@@ -96,7 +108,7 @@ html {
  background-color: none;
 } 
 
-.carouselCaptionsPeeling {
+.carouselBotox {
   position: absolute;
   right: 15%;
   top: 120px;
@@ -111,18 +123,20 @@ html {
   min-height: 400px;
  } 
 
-.carousel-caption-social-media {
- position: absolute;
- right: 15%;
- top: 120px;
- left: 10%;
- z-index: 10;
- padding-top: 20px;
- padding-bottom: 20px;
- color: var(--text-color);
- text-align: start;
- background-color: none;
-} 
+.carouselPeeling {
+  position: absolute;
+  right: 15%;
+  top: 120px;
+  left: 10%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: start;
+  background-color: none;
+  height: 50vh;
+  min-height: 400px;
+ } 
 
 .dropdown-item {
  color: var(--first-alpha-color);
@@ -203,6 +217,16 @@ html {
  background-position: center;
 }
 
+.bbglow-hero {
+  background: url(../images/bbglow-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--white-color); 
+  height: 90vh;
+  min-height: 400px;
+  background-position: center;
+ }
+
 .contacto-hero {
  background: url(../images/contacto-hero.png);
  background-repeat: no-repeat;
@@ -211,6 +235,15 @@ html {
  min-height: 400px;
  color: var(--white-color);
 }
+
+.dermaplaning-hero  {
+  background: url(../images/dermaplaning-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 0.5vh;
+  min-height: 400px;
+  color: var(--white-color);
+ }
 
 .error-404-hero {
  background: url(../images/404.png);
@@ -222,15 +255,15 @@ html {
  background-position: center;
 }
 
-.peeling-hero-fija {
- background: url(../images/peeling-hero.png);
- background-repeat: no-repeat;
- background-size: cover; 
- color: var(--text-color);
- height: 70vh;
- min-height: 400px;
- background-position: center;
-}
+.gracias-hero {
+  background: url(../images/gracias.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--text-color);
+  height: 100vh;
+  min-height: 400px;
+  background-position: center;
+ }
 
 .lets-start-hero {
  background: url(../images/lets-start-hero.jpg);
@@ -252,45 +285,47 @@ html {
  background-position: center;
 }
 
+.peeling-hero-fija {
+  background: url(../images/peeling-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--text-color);
+  height: 70vh;
+  min-height: 400px;
+  background-position: center;
+ }
+
 .social-media-hero {
  background: url(../images/social-media-hero.jpg);
  background-repeat: no-repeat;
  background-size: cover; 
- height: 0.5vh;
+ height: 100vh;
  min-height: 400px;
  color: var(--text-color);
  background-position: center;
 }
 
-.gracias-hero {
- background: url(../images/gracias.jpg);
- background-repeat: no-repeat;
- background-size: cover; 
- color: var(--text-color);
- height: 100vh;
- min-height: 400px;
- background-position: center;
-}
+.terapia-led-fijo {
+  background: url(../images/terapia-led-fijo.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--white-color);
+  height: 0.5vh;
+  min-height: 400px;
+  background-position: center;
+  color: var(--dark-color);
+ }
 
-.bbglow-hero {
- background: url(../images/bbglow-hero.png);
- background-repeat: no-repeat;
- background-size: cover; 
- color: var(--white-color); 
- height: 90vh;
- min-height: 400px;
- background-position: center;
-}
-
-.login-hero {
- background: url(../images/login-hero3.png);
- background-position: auto;
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- min-height: 400px;
- background-position: center;
-}
+ .terapia-led-fijo-2 {
+  background: url(../images/terapia-led-fijo-2.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--white-color);
+  height: 0.5vh;
+  min-height: 400px;
+  background-position: center;
+  color: var(--dark-color);
+ }
 
 /* FORMULARIOS DE CONTACTO */
 
