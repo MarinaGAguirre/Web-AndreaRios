@@ -11,24 +11,25 @@ var usersRouter = require('./routes/users');
 
 var bbglowRouter = require('./routes/bbglow');
 var peelingRouter = require('./routes/peeling');
+var dermapenRouter = require('./routes/dermapen');
 var dermaplaningRouter = require('./routes/dermaplaning');
 var terapiaLedRouter = require('./routes/terapiaLed');
 var nanobotoxRouter = require('./routes/nanobotox');
-/*var limpieza-facialRouter = require('./routes/limpieza-facial');
-var radiofrecuencia-facialRouter = require('./routes/radiofrecuencia-facial');
-var ultracavitacionRouter = require('./routes/ultracavitacion');
-var depilacion-definitivaRouter = require('./routes/depilacion-definitiva');
+var limpiezaFacialRouter = require('./routes/limpiezaFacial');
+var radiofrecuenciaFacialRouter = require('./routes/radiofrecuenciaFacial');
+var radiofrecuenciaCorporalRouter = require('./routes/radiofrecuenciaCorporal');
+/*var ultracavitacionRouter = require('./routes/ultracavitacion');
+var depilacionDefinitivaRouter = require('./routes/depilacionDefinitiva');
 var lipolaser-no-invasivoRouter = require('./routes/lipolaser-no-invasivo');
-var radiofrecuencia-corporalRouter = require('./routes/radiofrecuencia-corporal');
 var reflexologiaRouter = require('./routes/reflexologia');
-var masaje-antiestresRouter = require('./routes/masaje-antiestres');
-var drenaje-linfaticoRouter = require('./routes/drenaje-linfatico');
-var masaje-terapeuticoRouter = require('./routes/masaje-terapeutico');
+var masajeAntiEstresRouter = require('./routes/masajeAntiEstres');
+var drenajeLinfaticoRouter = require('./routes/drenajeLinfatico');
+var masajeTerapeuticoRouter = require('./routes/masajeTerapeutico');
 var reikiRouter = require('./routes/reiki');
 var cuppingRouter = require('./routes/cupping');
 var biomagnetismoRouter = require('./routes/biomagnetismo');
-var esferas-chinasRouter = require('./routes/esferas-chinas');
-var sobre-andreaRouter = require('./routes/sobre-andrea');*/
+var esferasChinasRouter = require('./routes/esferasChinas');
+var sobreAndreaRouter = require('./routes/sobreAndrea');*/
 var contactoRouter = require('./routes/contacto');
 var graciasRouter = require('./routes/gracias');
 
@@ -49,24 +50,25 @@ app.use('/users', usersRouter);
 
 app.use('/bbglow', bbglowRouter);
 app.use('/peeling', peelingRouter);
+app.use('/dermapen', dermapenRouter);
 app.use('/dermaplaning', dermaplaningRouter);
 app.use('/terapiaLed', terapiaLedRouter);
 app.use('/nanobotox', nanobotoxRouter);
-/*pp.use('/limpieza-facial', limpieza-facialRouter);
-app.use('/radiofrecuencia-facial', radiofrecuencia-facialRouter);
-app.use('/ultracavitacion', ultracavitacionRouter);
-app.use('/depilacion-definitiva', depilacion-definitivaRouter);
+app.use('/limpiezafacial', limpiezaFacialRouter);
+app.use('/radiofrecuenciaFacial', radiofrecuenciaFacialRouter);
+app.use('/radiofrecuenciaCorporal', radiofrecuenciaCorporalRouter);
+/*app.use('/ultracavitacion', ultracavitacionRouter);
+app.use('/depilacionDefinitiva', depilacionDefinitivaRouter);
 app.use('/lipolaser-no-invasivo', lipolaser-no-invasivoRouter);
-app.use('/radiofrecuencia-corporal', radiofrecuencia-corporalRouter);
 app.use('/reflexologia', reflexologiaRouter);
-app.use('/masaje-antiestres', masaje-antiestresRouter);
-app.use('/drenaje-linfatico', drenaje-linfaticoRouter);
-app.use('/masaje-terapeutico', masaje-terapeuticoRouter);
+app.use('/masajeAntiEstres', masajeAntiEstresRouter);
+app.use('/drenajeLinfatico', drenajeLinfaticoRouter);
+app.use('/masajeTerapeutico', masajeTerapeuticoRouter);
 app.use('/reiki', reikiRouter);
 app.use('/cupping', cuppingRouter);
 app.use('/biomagnetismo', biomagnetismoRouter);
-app.use('/esferas-chinas', esferas-chinasRouter);
-app.use('/sobre-andrea', sobre-andreaRouter);*/
+app.use('/esferasChinas', esferasChinasRouter);
+app.use('/sobreAndrea', sobreAndreaRouter);*/
 app.use('/contacto', contactoRouter);
 app.use('/gracias', graciasRouter);
 
