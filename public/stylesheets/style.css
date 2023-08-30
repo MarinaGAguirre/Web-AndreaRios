@@ -276,12 +276,22 @@ html {
   background-position: center;
 }
 
+.lipolaser-hero {
+  background: url(../images/lipolaser-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 0.5vh;
+  min-height: 400px;
+  color: var(--dark-color);
+  background-position: center;
+}
+
 .nano-botox-hero {
   background: url(../images/nano-botox-hero-andrea-rios.png);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
-  height: 70vh;
+  height: 100vh;
   min-height: 400px;
   background-position: center;
  }
@@ -317,7 +327,7 @@ html {
 }
 
 .terapia-led-fijo {
-  background: url(../images/terapia-led-fijo-andrea-rios-1.png);
+  background: url(../images/terapia-led-fijo-andrea-rios.png);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--white-color);
@@ -414,7 +424,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #efefef;
+  background: trans;
 }
 
 .containerr {
@@ -429,7 +439,7 @@ html {
 }
 
 .cardss {
-  background: #fff;
+  background: #d1d2d3;
   border-radius: 10px;
 }
 
@@ -471,7 +481,7 @@ html {
 
 .swiper-navBtn::before,
 .swiper-navBtn::after {
-  font-size: 26px !important;
+  font-size: 22px !important;
 }
 
 .slide-container {
