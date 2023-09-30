@@ -11,7 +11,7 @@ var usersRouter = require('./routes/users');
 
 var bbglowRouter = require('./routes/bbglow');
 var peelingRouter = require('./routes/peeling');
-var dermapenRouter = require('./routes/dermapen');
+var tratamientoAntiagingRouter = require('./routes/tratamientoAntiaging');
 var dermaplaningRouter = require('./routes/dermaplaning');
 var terapiaLedRouter = require('./routes/terapiaLed');
 var nanobotoxRouter = require('./routes/nanobotox');
@@ -51,7 +51,7 @@ app.use('/users', usersRouter);
 
 app.use('/bbglow', bbglowRouter);
 app.use('/peeling', peelingRouter);
-app.use('/dermapen', dermapenRouter);
+app.use('/tratamientoAntiaging', tratamientoAntiagingRouter);
 app.use('/dermaplaning', dermaplaningRouter);
 app.use('/terapiaLed', terapiaLedRouter);
 app.use('/nanobotox', nanobotoxRouter);

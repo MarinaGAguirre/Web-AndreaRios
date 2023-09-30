@@ -65,6 +65,11 @@ html {
  --bs-btn-active-bg: var(--second-color);
  --bs-btn-active-border-color: var(--second-color);
  --bs-btn-font-size: 0.75rem;
+ transition: background 0.5s, transform 0.5s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-7px);
 }
 
 .btn-blanco {
@@ -77,7 +82,13 @@ html {
  --bs-btn-active-bg: var(--second-color);
  --bs-btn-active-border-color: var(--second-color);
  --bs-btn-font-size: 0.75rem;
+ transition: background 0.5s, transform 0.5s;
 }
+
+.btn-blanco:hover {
+  transform: translateY(-7px);
+}
+
 
 .btn-check {
  background-color: var(--second-color);
@@ -107,13 +118,25 @@ html {
  background-color: none;
 } 
 
+.carousel-caption-dermapen {
+  position: absolute;
+  right: 15%;
+  top: 60px;
+  left: 20%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--white-color);
+  text-align: start;
+  background-color: none;
+}
+
 .carouselNanoBotox {
   position: absolute;
   right: 15%;
   top: 120px;
   left: 10%;
   z-index: 10;
-  padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
   text-align: start;
@@ -146,6 +169,19 @@ html {
   color: var(--third-alpha-color);
 }
 
+.img-terapia-led {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.img-terapia-led .img-fluid {
+  padding: 20px;
+}
+
 .navbar-brand img {
  width: auto;
  height: 52px;
@@ -170,6 +206,12 @@ html {
 .nav-link:hover {
  color: var(--first-color);
 } 
+
+.p-peeling {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
 /*  **********  My Styles  **********  */
 
@@ -234,6 +276,16 @@ html {
  min-height: 400px;
  color: var(--white-color);
  background-position: center;
+}
+
+.dermapen-hero-fijo {
+  background: url(../images/dermapen-hero-fijo.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 100vh;
+  min-height: 400px;
+  background-position: center;
 }
 
 .dermaplaning-hero  {
@@ -326,29 +378,25 @@ html {
   background-position: center;
 }
 
-.terapia-led-fijo {
-  background: url(../images/terapia-led-fijo-andrea-rios.png);
-  background-repeat: no-repeat;
-  background-size: cover; 
-  color: var(--white-color);
-  height: 70vh;
-  min-height: 400px;
-  background-position: center;
-  color: var(--dark-color);
- }
-
-.testimonios {
+.calificaciones {
   background-color: var(--bg-alpha-color);
   padding-bottom: 4rem !important;
   color: var(--dark-color); 
 } 
 
-.testimonios {
+.calificaciones {
   text-align: center;
   padding: 50px 20px;
 }
 
-/*  **********  CARD HOME Styles  **********  */
+#textoNanoBotox {
+  /*background:rgb(241, 243, 243);*/
+  background: var(--fourth-color);
+  padding: 40px;
+  color: #ffffff;
+}
+
+/*  **********  CARD HOME SERVICIOS Styles  **********  */
 
 .swiper {
   width: 100%;
@@ -374,9 +422,9 @@ html {
   margin: 0 1em;
 }
 
-.swiper-slide:not(.swiper-slide-active){
-  /*filter: blur(1.5px);*/
-}
+/*.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1.5px);
+}*/
 
 .cards-image {
   width: 12em;
@@ -412,6 +460,92 @@ html {
   font-size: 1.1er;
   margin: 1em 0;
 }
+
+
+/*  **********  CARDS RUTINA FACIAL Styles  **********  */
+
+.card-rutina {
+  border-radius: 30px;
+  box-shadow: 5px 5px 1em 5px rgb(2, 2, 2, .2);
+  /*box-shadow: 12px 12px 12px 0px rgb(0, 0, 0, .2);*/
+  transition: background 0.75s, transform 0.75s;
+}
+
+.card-rutina:hover {
+  transform: translateY(-30px);
+  box-shadow: 5px 5px 1em 5px rgb(236, 38, 143);
+}
+
+.card-rutina-imagen {
+  border-radius: 30px 30px 1px 30px ;
+}
+
+
+/*  **********  CARDS LIMPIEZA FACIAL Styles  **********  */
+
+.card-limpieza-facial {
+  border-radius: 1px 30px 1px 30px;
+  box-shadow: 5px 5px 1em 5px rgb(2, 2, 2, .2);
+  font-size: 18px;
+  /*box-shadow: 12px 12px 12px 0px rgb(0, 0, 0, .2);*/
+}
+
+.card-limpieza-facial .card-img {
+  border-radius: 1px 30px 1px 30px;
+}
+
+
+/*  **********  CARDS PEELING  **********  */
+
+
+.card {
+  border-radius: 30px 30px 1px 30px;
+  box-shadow: 4px 4px 1em 4px rgb(2, 2, 2, .2);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.card-img-top {
+  border-radius: 30px 30px 1px 30px;
+}
+
+/* **********  CARDS y TEXT BBGlow ********** */
+/* **********  ***** * **** ****** ********** */
+
+.bg--second-color {
+  background-color: none;
+}
+
+.card-bbglow {
+  border-radius: 30px 30px 1px 30px;
+  box-shadow: 4px 4px 1em 4px rgb(2, 2, 2, .2);
+  margin: 20px;
+}
+
+#text-bbglow p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+#text-bbglow h4 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+#text-bbglow ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.tipos-de-peeling {
+  background:rgb(241, 243, 243);
+  }
 
 
 /*  **********  CARDSS LIPOPLASER Styles  **********  */
@@ -493,7 +627,7 @@ html {
   background-color: var(--first-color) !important;
 }
 
-/* FORMULARIOS DE CONTACTO */
+/*  ********** FORMULARIOS DE CONTACTO **********  */
 
 .form-control {
  border-radius:12px;
@@ -578,7 +712,7 @@ html {
  margin-bottom: 5px;
 }
 
-/* FORMULARIOS DE LETS START: form-services */
+/* ********** FORMULARIOS DE LETS START: form-services ********** */
 
 .form-lets-start {
  font-size: 0.85rem;
@@ -596,9 +730,109 @@ html {
  font-size: 0.85rem;
 }
 
-.tipos-de-peeling {
- background:rgb(241, 243, 243);
- }
+
+/*  **********  CARDDS LIMPIEZA FACIAL Styles  **********  */
+
+.swiperlimpieza { /* body*/
+  margin: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+  min-height: 0.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: trans;
+}
+
+.containeeer {
+  max-width: 1120px;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+
+.cardds {
+  background: #d1d2d3;
+  border-radius: 10px;
+}
+
+.cardds .image-box {
+  height: 200px;
+}
+
+.cardds .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.cardds .profile-details {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 15px;
+}
+
+.profile-details .titulo {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profile-details .detalle {
+  font-size: 15px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.swiper-navBtn {
+  color: var(--first-color) !important;
+  height: 40px !important;
+  width: 40px !important;
+  background: var(--fourth-color);
+  border-radius: 50%;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 22px !important;
+}
+
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--first-color) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Las "media query" son característica de CSS. Permite crear e
   implementar diseños que se adaptan a las propiedades del dispositivo que estás usando. */
