@@ -1,2 +1,2 @@
 # Sitio web de Andrea Rios
-Proyecto con Node Js, Git
+Proyecto con Node Js, Handlebars y Express.JS
